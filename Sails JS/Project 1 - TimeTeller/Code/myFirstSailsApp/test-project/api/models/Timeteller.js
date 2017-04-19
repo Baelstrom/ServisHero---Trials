@@ -8,9 +8,18 @@
 module.exports = {
 
   attributes: {
-    currentTime : {
-      type:'datetime'
+    currentDate: {
+      type:'string'
+    },
+
+    currentMonth: {
+      type:'string'
+    },
+
+    currentYear: {
+      type:'string'
     }
+
   }
 };
 

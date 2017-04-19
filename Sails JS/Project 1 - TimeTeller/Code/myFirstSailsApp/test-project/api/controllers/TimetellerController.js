@@ -8,7 +8,13 @@
 module.exports = {
 
   "date" : function(req,res){
-    req.view();
+    var d = new Date();
+    var day = d.getDate();
+    var month = d.getMonth();
+    var year = d.getYear();
+
+    console
+
 
   }
 
