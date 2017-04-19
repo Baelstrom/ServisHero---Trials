@@ -10,10 +10,15 @@ module.exports = {
   "date" : function(req,res){
     var d = new Date();
     var day = d.getDate();
-    var month = d.getMonth();
-    var year = d.getYear();
+    var month = d.getMonth()+1;
+    var year = d.getUTCFullYear();
 
-    console
+    res.json({
+      day: day,
+      month: month,
+      year: year
+
+    });
 
 
   }
