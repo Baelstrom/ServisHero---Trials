@@ -17,8 +17,14 @@ module.exports = {
       day: day,
       month: month,
       year: year
-
     });
+
+
+  },
+
+  "dynamicdate" : function(req,res){
+
+    res.view();
 
 
   }
