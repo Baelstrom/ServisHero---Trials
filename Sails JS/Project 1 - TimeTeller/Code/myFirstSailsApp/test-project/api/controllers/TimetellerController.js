@@ -6,6 +6,11 @@
  */
 
 module.exports = {
-	
+
+  "date" : function(req,res){
+    req.view();
+
+  }
+
 };
 
