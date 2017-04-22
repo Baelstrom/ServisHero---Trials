@@ -31,6 +31,16 @@ module.exports = {
       })
 
     })
+  },
+
+  index: function( req,res,next){
+    User.find(function foundUsers(err,user){
+      if(err) return next(err);
+
+      res.view({
+        user:user
+      })
+    })
   }
 };
 
